@@ -53,4 +53,12 @@ for(var i = 0; i < 1000; i++){
    websites.push("codewars")
 }
 
-//
+// Elevator Distance
+
+function elevatorDistance(array) {
+  var sum;
+   for(var i = 0; i < array.length; i++){
+    i === 0 ? sum = 0 : sum += Math.abs((array[i] - array[i-1])) 
+   }
+   return sum
+ }
