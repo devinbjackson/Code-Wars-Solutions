@@ -29,4 +29,20 @@ function printerError(s) {
     return `${num}/${s.length}`
 }
 
+// Cat years, Dog years
+var humanYearsCatYearsDogYears = function(humanYears) {
+  var arr = [humanYears, 0, 0];
+  if (humanYears == 1) {
+    return [1, 15, 15];
+  } else if (humanYears == 2) {
+    return [2, 24, 24];
+  }
+  arr = [humanYears, 24, 24];
+  for (var i = 2; i < humanYears; i++) {
+    arr[1] += 4;
+    arr[2] += 5;
+  }
+  return arr;
+};
+
 //
