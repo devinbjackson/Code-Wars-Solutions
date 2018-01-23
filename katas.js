@@ -17,4 +17,16 @@ function SubtractSum(n) {
     return 'apple'
   }
 
-// 
+// or just return apple. that works too.
+
+// Printer Errors
+
+function printerError(s) {
+    var num = 0;
+    for(var i = 0; i < s.length; i++){
+    /[n-z]/g.exec(s[i])? num++:null;
+    }
+    return `${num}/${s.length}`
+}
+
+//
