@@ -71,3 +71,19 @@ function elevatorDistance(array) {
   }
   return [name, (name[0] + name[1])]
 }
+
+// Minimize _sum_Of_array_(Array_Series_#1)
+
+function minSum(arr) {
+  var sortedArray = arr.sort(function(a,b){
+    return a-b
+  })
+  var sumArr = [];
+  for(var i = 0; i < sortedArray.length/2; i++){
+    console.log(sortedArray[(sortedArray.length - 1) - i])
+    sumArr.push(sortedArray[i] * sortedArray[(sortedArray.length -1) - i]) 
+  }
+  return sumArr.reduce(function(a,b){
+    return a+b
+  })
+}
