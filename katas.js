@@ -62,3 +62,12 @@ function elevatorDistance(array) {
    }
    return sum
  }
+
+ // Who is going to pay for the wall?
+
+ function whoIsPaying(name){
+  if(name.length < 3){
+    return (name, [name])
+  }
+  return [name, (name[0] + name[1])]
+}
