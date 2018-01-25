@@ -87,3 +87,11 @@ function minSum(arr) {
     return a+b
   })
 }
+
+// Multiply
+
+function multiply(a, b){
+  return a * b
+}
+
+//
