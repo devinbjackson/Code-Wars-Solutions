@@ -94,4 +94,23 @@ function multiply(a, b){
   return a * b
 }
 
-//
+// Single character palindromes II
+
+function solve(str) {
+  var count = [];
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] !== str[str.length - 1 - i]) {
+      if (!count.includes(str.length - 1 - i)) {
+        count.push(i);
+      }
+    }
+  }
+  if (count.length === 1) {
+    return true;
+  } else {
+        if(str.length%2 !== 0){
+      return true
+    }
+    return false;
+  }
+}
