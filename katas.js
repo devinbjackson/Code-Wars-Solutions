@@ -141,3 +141,8 @@ function checkExam(array1, array2) {
  return sum < 0 ? 0 : sum
 }
 
+//Century From Year
+
+function century(year) {
+  return year%100 ===0?Math.floor(year/100):Math.floor(year/100) + 1
+}
