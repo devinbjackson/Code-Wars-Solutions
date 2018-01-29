@@ -146,3 +146,11 @@ function checkExam(array1, array2) {
 function century(year) {
   return year%100 ===0?Math.floor(year/100):Math.floor(year/100) + 1
 }
+
+// Do I get a bonus?
+
+function bonusTime(salary, bonus) {
+return (`£${(bonus?salary*10:salary)}`)
+}
+
+//
