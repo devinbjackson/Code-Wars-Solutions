@@ -153,4 +153,12 @@ function bonusTime(salary, bonus) {
 return (`£${(bonus?salary*10:salary)}`)
 }
 
-//
+// Generate range of integers
+
+function generateRange(min, max, step){
+var arr=[];
+for(var i = min; i<=max; i=i+step){
+arr.push(i)
+}
+return arr
+}
