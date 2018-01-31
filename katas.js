@@ -162,3 +162,19 @@ arr.push(i)
 }
 return arr
 }
+
+// Simple string reversal
+
+function solve(str) {
+  var spaces = [];
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] === ' ') {
+      spaces.push(i);
+    }
+  }
+  var newStr = str.split('').reverse().join('').replace(/\s/g, '').split('');
+  for (var h = 0; h < spaces.length; h++) {
+    newStr.splice(spaces[h], 0, ' ');
+  }
+  return newStr.join('');
+}
